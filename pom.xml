@@ -21,6 +21,7 @@
             <version>7.0</version>
             <scope>provided</scope>
         </dependency>
+        <!-- Spring Modules -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
@@ -66,7 +67,13 @@
             <groupId>jstl</groupId>
             <artifactId>jstl</artifactId>
             <version>1.2</version>
-        </dependency>	
+        </dependency>
+    <!-- Postgresql -->    
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>9.3-1100-jdbc3</version>
+        </dependency>
     </dependencies>
 
     <build>

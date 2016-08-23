@@ -20,8 +20,11 @@
     <mvc:resources mapping="/css/*" location="/css/"/>
     <mvc:resources mapping="/imagenes/*" location="/imagenes/"/>
     
+    <!-- Se añade para poder utilizar la etiqueta @Autowiring dentro del paquete Controlador-->
+    <context:annotation-config/>
+   
     <context:component-scan base-package="Controlador"/>
-
+    
     <bean id="viewResolver"
           class="org.springframework.web.servlet.view.InternalResourceViewResolver"
           p:viewClass="org.springframework.web.servlet.view.JstlView"
