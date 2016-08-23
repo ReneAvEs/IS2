@@ -10,7 +10,7 @@
     <body>
         <h1>Los grupos del profesor con id : ${id_profesor}</h1>
         <c:forEach var="grupo" items="${grupos}">
-            <h2>${grupo}</h2>
+            <h2>${grupo.nombre_grupo}</h2>
         </c:forEach>
     </body>
 </html>
